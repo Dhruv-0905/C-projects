@@ -1,0 +1,37 @@
+#include<stdio.h>
+
+int main()
+{
+    int i = 0;
+    printf("Enter a number (between 1 to 5):\n");
+    scanf("%d", &i);
+
+    if(i <= 5)
+    {
+        switch (i)
+        {
+        case 1:
+        printf("Food item - Pasta\n Price (in Rs) - 179");
+        break;
+
+        case 2:
+        printf("Food Item - Pizza\n Price (in Rs) - 239");
+
+        case 3:
+        printf("Food Item - Burger\n Price (in Rs) - 129");
+
+        case 4:
+        printf("Food Item - Sandwich\n Price (in Rs) - 149");
+
+        default:
+        printf("Food Item - French Fries \n Price (in Rs) - 99");
+        }
+    }
+
+    else
+    {
+        printf("Enter a number between 1 to 5");
+        main();
+    }
+    return 0;
+}
